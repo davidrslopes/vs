@@ -30,38 +30,6 @@ module.exports = function(grunt) {
                     src: "bootstrap/js",
                     dest: "src/vendor/bootstrap/js",
                 },
-                jasny_bootstrap: {
-                    src: "jasny-bootstrap/dist",
-                    dest: "src/vendor/jasny-bootstrap",
-                },
-                masonry: {
-                    options: {
-                        srcPrefix: "bower_components/masonry/dist",
-                        destPrefix: "src/vendor/masonry"
-                    },
-                    files: { "masonry.js": "masonry.pkgd.js" }
-                },
-                imagesloaded: {
-                    options: {
-                        srcPrefix: "bower_components/imagesloaded",
-                        destPrefix: "src/vendor/imagesloaded"
-                    },
-                    files: { "imagesloaded.js": "imagesloaded.pkgd.js" }
-                },
-                anijs: {
-                    options: {
-                        srcPrefix: "bower_components/anijs/dist",
-                        destPrefix: "src/vendor/anijs"
-                    },
-                    files: { "anijs.js": "anijs.js" }
-                },
-                animate_css: {
-                    options: {
-                        srcPrefix: "bower_components/animate.css",
-                        destPrefix: "src/vendor/animate.css"
-                    },
-                    files: { "animate.css": "animate.css" },
-                },
                 fontawesome_fonts: {
                     src: "bower_components/fontawesome/fonts",
                     dest: "assets/fonts"
@@ -127,8 +95,6 @@ module.exports = function(grunt) {
                     files: {
                         'assets/css/style.min.css': [
                                                         'src/vendor/bootstrap/css/bootstrap.css',
-                                                        'src/vendor/jasny-bootstrap/css/jasny-bootstrap.css',
-                                                        'src/vendor/animate.css/animate.css',
                                                         'src/vendor/fontawesome/css/font-awesome.css',
                                                         'src/vendor/ionicons/css/ionicons.css',
                                                         'src/css/style.css',
@@ -152,16 +118,9 @@ module.exports = function(grunt) {
                 jsfiles: {
                     src: [
                             'src/vendor/jquery/jquery.js',
-                            //'../../../wp-includes/js/jquery/jquery.js', WP version
                             'src/vendor/bootstrap/js/bootstrap.js',
-                            'src/vendor/bootstrap/js/carousel.js',
-                            'src/vendor/bootstrap/js/tooltip.js',
-                            'src/vendor/bootstrap/js/popover.js',
-                            'src/vendor/jasny-bootstrap/js/jasny-bootstrap.js',
-                            'src/vendor/masonry/masonry.js',
-                            'src/vendor/imagesloaded/imagesloaded.js',
-                            'src/vendor/anijs/anijs.js',
-                            'src/js/msdpds.js',
+                            //'src/vendor/bootstrap/js/*****.js', Use when needed
+                            'src/js/script.js',
                         ],
                     dest: 'build/js/app.js', // unminified version for debugging
                     nonull: true,
@@ -195,40 +154,6 @@ module.exports = function(grunt) {
                     }]
                 }
             }, // imagemin
-
-             /***************************************************************************
-              * i18n
-              ***************************************************************************/
-
-             // Add missing textdomain strings
-             addtextdomain: {
-                 options: {
-                     textdomain: 'msdpds-theme',    // Project text domain.
-                 },
-                 target: {
-                     files: {
-                         src: [ '*.php', '**/*.php', '!node_modules/**', '!bower_components/**', '!tests/**' ]
-                     }
-                 }
-             }, //addtextdomain
-
-             // Generate fresh .POT file
-             makepot: {
-                 target: {
-                     options: {
-                         domainPath: '/languages',
-                         mainFile: 'index.php',
-                         potComments: 'Copyright (c) {year} Hi-Media Portugal',
-                         potFilename: 'msdpds-theme.pot',
-                         potHeaders: {
-                             poedit: true,
-                             'x-poedit-keywordslist': true
-                         },
-                         type: 'wp-theme',
-                         updateTimestamp: true
-                     }
-                 }
-             }, //makepot
 
             /***************************************************************************
              * Watch
@@ -268,12 +193,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-contrib-uglify");
-    grunt.loadNpmTasks("grunt-wp-i18n");
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Register commands
     grunt.registerTask("default", ["bowercopy", "less", "cssmin", "concat", "uglify", "imagemin", "watch"]);
     grunt.registerTask("design", ["less", "cssmin", "concat", "uglify", "imagemin", "watch"]);
-    grunt.registerTask("i18n", ["addtextdomain", "makepot"]);
 
 };
