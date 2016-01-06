@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 				navwalker: {
 					options: {
 						srcPrefix: "bower_components/wp-bootstrap-navwalker",
-						destPrefix: "inc/lib"
+						destPrefix: "functions/lib"
 					},
 					files: { "wp_bootstrap_navwalker.php": "wp_bootstrap_navwalker.php" },
 				}
