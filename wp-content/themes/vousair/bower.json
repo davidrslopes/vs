@@ -1,25 +1,25 @@
 {
-  "name": "vousair",
-  "version": "1.0.0",
-  "authors": [
-    "David Lopes <davidrslopes@gmail.com>"
-  ],
-  "description": "Custom theme for Vou Sair, based on Twitter Bootstrap",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "jquery#1",
-    "bootstrap": "",
-    "wp-bootstrap-navwalker": "git://github.com/twittem/wp-bootstrap-navwalker.git",
-    "modernizr": "modernizr#2",
-    "fontawesome": "~4.2.0",
-    "ionicons": "~2.0.1",
-    "respond-minmax": "~1.4.2",
-  }
+	"name": "vousair",
+	"version": "1.0.0",
+	"authors": [
+		"David Lopes <davidrslopes@gmail.com>",
+		"Hugo Carvalho <hugompcarvalho@gmail.com>",
+		"Diogo Ferreira <diogosantosferreira@gmail.com>"
+	],
+	"description": "Custom theme for Vou Sair, based on Twitter Bootstrap",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "jquery#1",
+		"bootstrap": "",
+		"wp-bootstrap-navwalker": "git://github.com/twittem/wp-bootstrap-navwalker.git",
+		"fontawesome": "^4.5.0",
+		"ionicons": "^2.0.1"
+	}
 }

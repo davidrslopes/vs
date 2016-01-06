@@ -29,7 +29,7 @@
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo VS_THEME_URI; ?>/favicon.ico">
 		<![endif]-->
-		<link rel="icon" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/assets/img/touch-icon-192x192.png">
+		<link rel="icon" sizes="192x192" href="<?php echo VS_THEME_URI; ?>/assets/img/touch-icon-192x192.png">
 		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php echo VS_THEME_URI; ?>/assets/img/apple-touch-icon-180x180-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo VS_THEME_URI; ?>/assets/img/apple-touch-icon-152x152-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo VS_THEME_URI; ?>/assets/img/apple-touch-icon-144x144-precomposed.png">

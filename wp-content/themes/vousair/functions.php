@@ -9,8 +9,8 @@
  * @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage MSD_Portugal_PDS
- * @since MSD Portugal - Profissionais de Saúde Theme 1.0
+ * @subpackage VouSair
+ * @since VouSair Theme 1.0
  */
 
 // Define helper constants
@@ -18,14 +18,19 @@ define ( 'VS_THEME_DIR', 		get_template_directory() );
 define ( 'VS_THEME_URI', 		get_template_directory_uri() );
 define ( 'VS_ROOT', 	 		get_site_url() );
 
+// Scripts
+require VS_THEME_DIR . '/functions/scripts.php';
+
+// Template functions
+require VS_THEME_DIR . '/functions/template.php';
+
 // Admin tweaks
 // require VS_THEME_DIR . '/functions/admin.php';
 
 // Theme setup
 // require VS_THEME_DIR . '/functions/setup.php';
 
-// Scripts
-// require VS_THEME_DIR . '/functions/scripts.php';
+
 
 // Menus
 // require VS_THEME_DIR . '/functions/menus.php';
@@ -39,5 +44,3 @@ define ( 'VS_ROOT', 	 		get_site_url() );
 // Various utilitites
 // require VS_THEME_DIR . '/functions/utils.php';
 
-// Template functions
-// require VS_THEME_DIR . '/functions/template.php';
