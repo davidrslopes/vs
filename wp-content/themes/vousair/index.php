@@ -18,6 +18,17 @@ get_header(); ?>
 
 <main class="container">
 
+<?php
+if ( have_posts() ) :
+	while ( have_posts() ) :
+		the_post();
+	endwhile;
+else :
+	get_template_part( 'parts/all', 'noresults' );
+endif; ?>
+
 </main>
 
-<?php get_footer();
+<?php //get_sidebar(); ?>
+
+<?php get_footer(); ?>

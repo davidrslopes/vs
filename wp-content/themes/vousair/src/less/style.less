@@ -48,21 +48,41 @@ This document setup variables and mixins.
 #2.1# VARIABLES
 ********************/
 
-//Core Colors
-@vs-grey: #333333;
+//Logo Colors
+@vs-orange: #EA542D;
+@vs-light-orange: #EE8822;
+
+@vs-dark-blue: #5B9ED6;
+@vs-blue: #50BFE6;
+@vs-light-blue: #80D2E9;
+@vs-lighter-blue: #B1E1EF;
+
+@vs-green: #A7CC38;
+
+@vs-purple: #A262A8;
+
+@vs-dark-grey: #333333;
+@vs-grey: #666666;
+@vs-light-grey: #EAEAEA;
 
 //Component Colors
 
 //Navigation
-@vs-nav-color: white;
-@vs-nav-bg: @vs-grey;
+@vs-nav-color: @vs-grey;
+@vs-nav-color-active: @vs-orange;
+@vs-nav-bg: white;
 
 /********************
 
 #2.2# MIXINS
 
 ********************/
-
+.transition (@transition: all 500ms linear) {
+	-webkit-transition:	@transition;
+	-moz-transition:	@transition;
+	-ms-transition:		@transition;
+	-o-transition:		@transition;
+}
 /********************
 
 #3# BOOTSTRAP
@@ -114,13 +134,44 @@ body{
 	padding-top: @navbar-height;
 }
 
-//Admin bar fix
+//Wordpress admin bar fix
 body.admin-bar nav.vs-navigation{
-	margin-top: 32px;
+	margin-top: 46px;
+}
+@media (min-width: 782px) {
+	body.admin-bar nav.vs-navigation{
+		margin-top: 32px;
+	}
 }
 
 nav.vs-navigation{
-
+	.navbar-header{
+		.navbar-brand{
+			float: right;
+			color:@vs-nav-color;
+			& > img{
+				height: 40px;
+				margin-top: -10px;
+			}
+		}
+		.navbar-toggle, .navbar-toggle.collapsed{
+			float: left;
+			margin-left: 15px;
+			margin-right: 15px;
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+			background: none;
+			& > span{
+				color:@vs-nav-color;
+				font-size: 33px;
+			}
+		}
+		.navbar-toggle > span{
+			.transition;
+			color:@vs-nav-color-active;
+		}
+	}
 }
 
 /********************
