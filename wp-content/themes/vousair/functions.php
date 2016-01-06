@@ -27,6 +27,9 @@ require VS_THEME_DIR . '/functions/template.php';
 // Menus
 require VS_THEME_DIR . '/functions/menus.php';
 
+// Sidebars
+require VS_THEME_DIR . '/functions/sidebars.php';
+
 // Admin tweaks
 // require VS_THEME_DIR . '/functions/admin.php';
 
@@ -37,8 +40,6 @@ require VS_THEME_DIR . '/functions/menus.php';
 
 
 
-// Sidebars
-// require VS_THEME_DIR . '/functions/sidebars.php';
 
 // Widgets
 // require VS_THEME_DIR . '/functions/widgets.php';
