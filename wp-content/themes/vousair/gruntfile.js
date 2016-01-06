@@ -148,8 +148,8 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true,
 				},
-				php:{
-					files: ['*.php', '**/*.php'],
+				markupfiles:{
+					files: ['*.php', '**/*.php', '*.html', '**/*.html']
 				},
 				lessfiles: {
 					files: ['*.less', '**/*.less'],

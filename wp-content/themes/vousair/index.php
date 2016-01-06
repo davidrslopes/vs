@@ -17,9 +17,7 @@
 get_header(); ?>
 
 <main class="container">
-	<header class="page-header">
-		<h1>Bemvindo ao novo VouSair.com</h1>
-	</header>
+
 </main>
 
 <?php get_footer();
