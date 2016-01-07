@@ -42,4 +42,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+	<?php get_template_part( 'parts/adtag', '1x1' ); ?>
+	<?php get_template_part( 'parts/adtag', 'billboard' ); ?>
 	<?php get_template_part( 'parts/all', 'navigation' ); ?>

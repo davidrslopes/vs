@@ -35,8 +35,11 @@ Indexed sections:
 	#2.1# VARIABLES
 	#2.2# MIXINS
 #3# BOOTSTRAP
-	#3.1# BS IMPORT
-	#3.2# BS OVERRIDES
+	#3.1# BS OVERRIDES
+	#3.2# BS IMPORT
+#4# BASE
+#5# NAVIGATION
+#6# ADVERTISING PLACEMENTS
 
 #99# UNSORTED CODE
 ********************
@@ -48,29 +51,22 @@ This document setup variables and mixins.
 #2.1# VARIABLES
 ********************/
 
-//Logo Colors
-$vs-orange:			#EA542D;
-$vs-light-orange:	#EE8822;
+//VouSair Logo Colors
+$vs-orange:				#EA542D;
+$vs-orange-light:		#EE8822;
 
-$vs-dark-blue:		#5B9ED6;
-$vs-blue:			#50BFE6;
-$vs-light-blue:		#80D2E9;
-$vs-lighter-blue:	#B1E1EF;
+$vs-blue-dark:			#5B9ED6;
+$vs-blue:				#50BFE6;
+$vs-blue-light:			#80D2E9;
+$vs-blue-lighter:		#B1E1EF;
 
-$vs-green:			#A7CC38;
+$vs-green:				#A7CC38;
 
-$vs-purple:			#A262A8;
+$vs-purple:				#A262A8;
 
-$vs-dark-grey:		#333333;
-$vs-grey:			#666666;
-$vs-light-grey:		#EAEAEA;
-
-//Component Colors
-
-//Navigation
-$vs-nav-color: $vs-grey;
-$vs-nav-color-active: $vs-orange;
-$vs-nav-bg: white;
+$vs-grey-dark:			#333333;
+$vs-grey:				#666666;
+$vs-grey-light:			#EAEAEA;
 
 /********************
 
@@ -78,43 +74,73 @@ $vs-nav-bg: white;
 
 ********************/
 @mixin transition($transition: all 500ms linear) {
-	-webkit-transition:	$transition;
-	-moz-transition:	$transition;
-	-ms-transition:		$transition;
-	-o-transition:		$transition;
+	-webkit-transition:		$transition;
+	-moz-transition:		$transition;
+	-ms-transition:			$transition;
+	-o-transition:			$transition;
 }
+
 /********************
 
 #3# BOOTSTRAP
 
-#3.1# BS IMPORT
-
-********************/
-
-@import "bootstrap/bootstrap.scss";
-
-/********************
-
-#3.2# BS OVERRIDES
+#3.1# BS OVERRIDES
 
 Override bootstrap settings, variables and code like a boss.
 
 ********************/
 
 // Colors
-//
-// Grayscale and brand colors for use across Bootstrap.
-$gray-dark:                 #373a3c;
-$gray:                      #55595c;
+$gray-dark:                 $vs-grey-dark;
+$gray:                      $vs-grey;
 $gray-light:                #818a91;
-$gray-lighter:              #eceeef;
+$gray-lighter:              $vs-grey-light;
 $gray-lightest:             #f7f7f9;
 
 $brand-primary:             $vs-blue;
 $brand-success:             $vs-green;
-$brand-info:                $vs-light-blue;
+$brand-info:                $vs-blue-light;
 $brand-warning:             $vs-orange;
 $brand-danger:              #d9534f;
+
+// Options
+//$enable-flex:				false;
+$enable-rounded:			false;
+$enable-shadows:			true;
+$enable-gradients:			true;
+$enable-transitions:		true;
+$enable-hover-media-query:	true;
+//$enable-grid-classes:		true;
+
+// Typography
+
+//$font-family-sans-serif:	"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//$font-family-serif:			Georgia, "Times New Roman", Times, serif !default;
+//$font-family-monospace:		Menlo, Monaco, Consolas, "Courier New", monospace !default;
+//$font-family-base:			$font-family-sans-serif !default;
+
+// Components
+
+//$line-height-lg:			(4 / 3) !default;
+//$line-height-sm:			1.5 !default;
+
+//$border-radius:				.25rem;//.25rem !default;
+//$border-radius-lg:			.3rem;//.3rem !default;
+//$border-radius-sm:			.2rem;//.2rem !default;
+
+//$component-active-color:	#fff !default;
+//$component-active-bg:		$brand-primary !default;
+
+//$caret-width:				.3em !default;
+//$caret-width-lg:			$caret-width !default;
+
+/********************
+
+#3.2# BS IMPORT
+
+********************/
+
+@import "bootstrap/bootstrap.scss";
 
 /********************
 
@@ -138,6 +164,18 @@ body.admin-bar nav.vs-navigation{
 	body.admin-bar nav.vs-navigation{
 		margin-top: 32px;
 	}
+}
+
+/********************
+
+#6# ADVERTISING PLACEMENTS
+
+********************/
+
+.vs-billboard{
+	background-color: $vs-grey;
+	text-align:center;
+	margin-bottom:-7px; //fix spacing problem with hmtags
 }
 
 /********************
