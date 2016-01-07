@@ -17,15 +17,19 @@ module.exports = function(grunt) {
 					src: "jquery/dist",
 					dest: "src/vendor/jquery",
 				},
-				bootstrap: {
+				tether: {
+					src: "tether/dist",
+					dest: "src/vendor/tether",
+				},
+				bootstrap4: {
 					src: "bootstrap/dist",
 					dest: "src/vendor/bootstrap",
 				},
-				bootstrap_less: {
-					src: "bower_components/bootstrap/less",
-					dest: "src/less/bootstrap"
+				bootstrap4_sass: {
+					src: "bower_components/bootstrap/scss",
+					dest: "src/scss/bootstrap"
 				},
-				bootstrap_plugins: {
+				bootstrap4_plugins: {
 					src: "bootstrap/js",
 					dest: "src/vendor/bootstrap/js",
 				},
@@ -61,17 +65,13 @@ module.exports = function(grunt) {
 			}, // bowercopy
 
 			/***************************************************************************
-			 * LESS & CSS
+			 * SASS & CSS
 			 ***************************************************************************/
-
-			// LESS to CSS
-			less: {
-				development: {
-					files: {"src/css/style.css": "src/less/style.less"}
+			sass:{
+				dist: {
+					files: {"src/css/style.css": "src/scss/style.scss"}
 				}
-			}, //less
-
-			// Minify & concat CSS
+			}, //sass
 			cssmin: {
 				options: {
 					keepSpecialComments: 0,
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 				combine: {
 					files: {
 						'assets/css/style.min.css': [
-							'src/vendor/bootstrap/css/bootstrap.css',
+							'src/vendor/tether/css/tether.css',
 							'src/vendor/fontawesome/css/font-awesome.css',
 							'src/vendor/ionicons/css/ionicons.css',
 							'src/css/style.css',
@@ -103,8 +103,8 @@ module.exports = function(grunt) {
 				jsfiles: {
 					src: [
 							'src/vendor/jquery/jquery.js',
+							'src/vendor/tether/js/tether.js',
 							'src/vendor/bootstrap/js/bootstrap.js',
-							//'src/vendor/bootstrap/js/*****.js', Use bootstrap additional modules when needed
 							'src/js/script.js',
 						],
 					dest: 'build/js/app.js', // unminified version for debugging
@@ -151,9 +151,9 @@ module.exports = function(grunt) {
 				markupfiles:{
 					files: ['*.php', '**/*.php', '*.html', '**/*.html']
 				},
-				lessfiles: {
-					files: ['*.less', '**/*.less'],
-					tasks: ['less']
+				sassfiles: {
+					files: ['*.scss', '**/*.scss'],
+					tasks: ['sass']
 				},
 				cssfiles: {
 					files: ['src/css/*.css'],
@@ -174,14 +174,14 @@ module.exports = function(grunt) {
 	// Load tasks
 	grunt.loadNpmTasks("grunt-bowercopy");
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
-	grunt.loadNpmTasks("grunt-contrib-less");
+	grunt.loadNpmTasks("grunt-contrib-sass");
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Register commands
-	grunt.registerTask("default", ["bowercopy", "less", "cssmin", "concat", "uglify", "imagemin", "watch"]);
-	grunt.registerTask("design", ["less", "cssmin", "concat", "uglify", "imagemin", "watch"]);
+	grunt.registerTask("default", ["bowercopy", "sass", "cssmin", "concat", "uglify", "imagemin", "watch"]);
+	grunt.registerTask("design", ["sass", "cssmin", "concat", "uglify", "imagemin", "watch"]);
 
 };
