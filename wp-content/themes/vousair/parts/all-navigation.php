@@ -6,8 +6,13 @@
  * @subpackage VouSair
  * @since VouSair Theme 1.0
 */
+
+// NAVIGATION OPTIONS
+$bgcolor = "#50BFE6";
+$nav_theme = "dark"; //dark or light mudar consoante se a cor de fundo é escura ou clara
+
 ?>
-<nav class="navbar navbar-full navbar-light bg-faded">
+<nav class="navbar navbar-full navbar-<?php echo $nav_theme; ?>" style="background-color: <?php echo $bgcolor; ?>;">
 	<div class="container">
 		<a class="navbar-brand" href="<?php echo VS_ROOT; ?>">
 			<img alt="vousair" src="<?php echo VS_THEME_URI; ?>/assets/img/vousair_ipad.png" height="30" class="img-responsive">

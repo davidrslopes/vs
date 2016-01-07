@@ -49,21 +49,21 @@ This document setup variables and mixins.
 ********************/
 
 //Logo Colors
-$vs-orange: #EA542D;
-$vs-light-orange: #EE8822;
+$vs-orange:			#EA542D;
+$vs-light-orange:	#EE8822;
 
-$vs-dark-blue: #5B9ED6;
-$vs-blue: #50BFE6;
-$vs-light-blue: #80D2E9;
-$vs-lighter-blue: #B1E1EF;
+$vs-dark-blue:		#5B9ED6;
+$vs-blue:			#50BFE6;
+$vs-light-blue:		#80D2E9;
+$vs-lighter-blue:	#B1E1EF;
 
-$vs-green: #A7CC38;
+$vs-green:			#A7CC38;
 
-$vs-purple: #A262A8;
+$vs-purple:			#A262A8;
 
-$vs-dark-grey: #333333;
-$vs-grey: #666666;
-$vs-light-grey: #EAEAEA;
+$vs-dark-grey:		#333333;
+$vs-grey:			#666666;
+$vs-light-grey:		#EAEAEA;
 
 //Component Colors
 
@@ -101,7 +101,20 @@ Override bootstrap settings, variables and code like a boss.
 
 ********************/
 
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+$gray-dark:                 #373a3c;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
 
+$brand-primary:             $vs-blue;
+$brand-success:             $vs-green;
+$brand-info:                $vs-light-blue;
+$brand-warning:             $vs-orange;
+$brand-danger:              #d9534f;
 
 /********************
 
