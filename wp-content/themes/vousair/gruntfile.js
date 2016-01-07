@@ -54,13 +54,6 @@ module.exports = function(grunt) {
 						destPrefix: "src/vendor/ionicons/css"
 					},
 					files: { "ionicons.css": "ionicons.css" }
-				},
-				navwalker: {
-					options: {
-						srcPrefix: "bower_components/wp-bootstrap-navwalker",
-						destPrefix: "functions/lib"
-					},
-					files: { "wp_bootstrap_navwalker.php": "wp_bootstrap_navwalker.php" },
 				}
 			}, // bowercopy
 

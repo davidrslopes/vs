@@ -19,7 +19,6 @@
 		"jquery": "1.9.1 - 2",
 		"tether": "^1.1.1",
 		"bootstrap": "^4",
-		"wp-bootstrap-navwalker": "git://github.com/twittem/wp-bootstrap-navwalker.git",
 		"fontawesome": "^4.5.0",
 		"ionicons": "^2.0.1"
 	}

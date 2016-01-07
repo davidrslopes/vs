@@ -28,9 +28,6 @@
 					'fallback_cb'		=> 'wp_bootstrap_navwalker::fallback',
 					'walker'			=> new wp_bootstrap_navwalker()
 				));
-				//Bootstrap 4 Structure Replace
-				$main_nav = str_replace('menu-item', 'nav-item', $main_nav);
-				$main_nav = str_replace('<a ', '<a class="nav-link" ', $main_nav);
 				echo $main_nav;
 			}else{
 				echo '<a href="/wp-admin/nav-menus.php" target="_blank" class="btn btn-primary navbar-btn btn-block text-center"><i class="fa fa-plus-square"></i> Por favor adicione um menu na area de administração do wordpress.</a>';
