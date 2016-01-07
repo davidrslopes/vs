@@ -5,6 +5,7 @@
 *.swp
 *.out
 *.idea
+*.sass-cache
 
 ## OSX stuff
 .DS_Store
