@@ -6,6 +6,7 @@
 *.out
 *.idea
 *.sass-cache
+*.sublime-*
 
 ## OSX stuff
 .DS_Store
