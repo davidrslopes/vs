@@ -40,6 +40,7 @@ Indexed sections:
 #4# BASE
 #5# NAVIGATION
 #6# ADVERTISING PLACEMENTS
+#7# SIDEBAR
 
 #99# UNSORTED CODE
 ********************
@@ -4921,6 +4922,11 @@ body.admin-bar nav.vs-navigation {
   text-align: center;
   margin-bottom: -7px; }
 
+/********************
+
+#7# SIDEBAR
+
+********************/
 /********************
 
 #99# UNSORTED CODE
