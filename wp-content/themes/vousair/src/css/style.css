@@ -4898,9 +4898,14 @@ a.bg-danger:focus {
 
 /********************
 
-#4# BASE
+#4# HEADER
 
 ********************/
+.vs-header {
+  background-color: white;
+  padding-top: .5rem;
+  padding-bottom: .5rem; }
+
 /********************
 
 #5# NAVIGATION
@@ -4921,6 +4926,8 @@ body.admin-bar nav.vs-navigation {
   background-color: #666666;
   text-align: center;
   margin-bottom: -7px; }
+  .vs-billboard > div {
+    margin-bottom: -7px; }
 
 /********************
 

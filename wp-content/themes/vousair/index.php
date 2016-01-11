@@ -17,18 +17,19 @@
 get_header(); ?>
 
 <main class="container">
-
-<?php
-if ( have_posts() ) :
-	while ( have_posts() ) :
-		the_post();
-	endwhile;
-else :
-	get_template_part( 'parts/all', 'noresults' );
-endif; ?>
-
+	<section class="col-md-9 col-xl-10">
+		<?php
+		if ( have_posts() ) :
+			while ( have_posts() ) :
+				the_post();
+			endwhile;
+		else :
+			get_template_part( 'parts/all', 'noresults' );
+		endif; ?>
+	</section>
+	<aside class="vs-sidebar col-md-3 col-xl-2">
+		<?php get_sidebar( 'vs-sidebar' ); ?>
+	</aside>
 </main>
-
-<?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>
