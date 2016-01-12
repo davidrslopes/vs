@@ -30,16 +30,14 @@ require VS_THEME_DIR . '/functions/menus.php';
 // Sidebars
 require VS_THEME_DIR . '/functions/sidebars.php';
 
+// Theme options
+require VS_THEME_DIR . '/functions/options.php';
+
 // Admin tweaks
 // require VS_THEME_DIR . '/functions/admin.php';
 
 // Theme setup
 // require VS_THEME_DIR . '/functions/setup.php';
-
-
-
-
-
 
 // Widgets
 // require VS_THEME_DIR . '/functions/widgets.php';
