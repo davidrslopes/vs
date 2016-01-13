@@ -13,7 +13,3 @@ $vs_billboard = true;
 $vs_leaderboard = true;
 $vs_mrec = true;
 $vs_bottom_mrec = true;
-
-// NAVIGATION OPTIONS
-$vs_nav_bgcolor = "#50BFE6";
-$vs_nav_theme = "dark"; //dark or light mudar consoante se a cor de fundo é escura ou clara
