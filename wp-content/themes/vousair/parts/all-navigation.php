@@ -6,9 +6,8 @@
  * @subpackage VouSair
  * @since VouSair Theme 1.0
 */
-$vs_nav_bgcolor = get_option( $vs_navbar_bgcolor, "#FFFFFF");
-//$vs_nav_theme = "light";
-$vs_nav_theme = get_option( $vs_navbar_theme, "light" );
+$vs_nav_bgcolor = get_option( 'vs_navbar_bgcolor', '#333333' );
+$vs_nav_theme = get_option( 'vs_navbar_theme', 'dark' );
 ?>
 <nav class="navbar navbar-full navbar-<?php echo $vs_nav_theme; ?>" style="background-color: <?php echo $vs_nav_bgcolor; ?>;">
 	<div class="container">
