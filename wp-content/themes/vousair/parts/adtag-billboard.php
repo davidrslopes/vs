@@ -6,6 +6,7 @@
  * @subpackage VouSair
  * @since VouSair Theme 1.0
 */
+$vs_billboard = get_theme_mod('vs_billboard', true);
 if($vs_billboard):
 ?>
 <div class="vs-billboard">

@@ -8,8 +8,9 @@
 */
 ?>
 
-<?php if ( is_sidebar_active('vs-sidebar') ) : ?>
+<?php if ( is_active_sidebar('vs-sidebar') ) : ?>
+	<?php get_template_part( 'parts/adtag', 'mrec-main' ); ?>
 	<?php dynamic_sidebar('vs-sidebar'); ?>
 <?php else: ?>
-	<p class="well">Adicione widgets à barra lateral na area de administração wordpress.</p>
+	<a href="/wp-admin/widgets.php" target="_blank" class="btn btn-primary text-center"><i class="fa fa-plus-square"></i> Adicione widgets à Barra lateral direita na area de administração wordpress.</a>
 <?php endif; ?>

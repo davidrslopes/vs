@@ -17,7 +17,7 @@
 get_header(); ?>
 
 <main class="container">
-	<section class="col-md-9 col-xl-10">
+	<section class="col-md-8 col-xl-9">
 		<?php
 		if ( have_posts() ) :
 			while ( have_posts() ) :
@@ -27,7 +27,7 @@ get_header(); ?>
 			get_template_part( 'parts/all', 'noresults' );
 		endif; ?>
 	</section>
-	<aside class="vs-sidebar col-md-3 col-xl-2">
+	<aside class="vs-sidebar col-md-4 col-xl-3">
 		<?php get_sidebar( 'vs-sidebar' ); ?>
 	</aside>
 </main>

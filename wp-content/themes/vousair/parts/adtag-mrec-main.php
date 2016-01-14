@@ -1,22 +1,23 @@
 <?php
 /**
- * VouSair - Ad Tag 1x1
+ * VouSair - Ad Tag MREC Main
  *
  * @package WordPress
  * @subpackage VouSair
  * @since VouSair Theme 1.0
 */
-$vs_1x1 = get_theme_mod('vs_1x1', true);
-if($vs_1x1):
+$vs_mrec_main = get_theme_mod('vs_mrec_main', true);
+if($vs_mrec_main):
 ?>
-<div class="vs-1x1">
-	<!-- BEGIN Hi-Media Media AdTag, vousair.com 1x1 - v1.0 -->
-	<div class="hmads_1x1">
+<div class="vs-mrec-main">
+	<!-- BEGIN Hi-Media Media AdTag, vousair.com 300x250 - v1.0 -->
+	<div class="hmads_300x250">
+
 		<script type="text/javascript">
 			(function() {
 				var utTagCountry = 'pt';
 				var utTagSite = 'vousair.com';
-				var utTagZone = 'vou_sair_1x1_pt';
+				var utTagZone = 'vou_sair_300x250_e_pt';
 				var utTagUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') +
 					'js.himediads.com/js' +
 					'?country=' + encodeURIComponent(utTagCountry) +
@@ -28,18 +29,18 @@ if($vs_1x1):
 		<script type="text/javascript">
 			try {
 				window.hiMediaUt.callTag({
-					"format": "1x1",
+					"format": "300x250",
 					"keyValues": ""
 				});
 			} catch(ex) {
 			}
 		</script>
 		<noscript>
-			<a href="http://rd.himediads.com/pt/jump/vousair.com/vou_sair_1x1_pt;sz=1x1;tile=1;ord=" target="_blank">
-				<img src="http://rd.himediads.com/pt/ad/vousair.com/vou_sair_1x1_pt;sz=1x1;tile=1;ord=?" width="1" height="1" alt="" />
+			<a href="http://rd.himediads.com/pt/jump/vousair.com/vou_sair_300x250_e_pt;sz=300x250;tile=1;ord=" target="_blank">
+				<img src="http://rd.himediads.com/pt/ad/vousair.com/vou_sair_300x250_e_pt;sz=300x250;tile=1;ord=?" width="300" height="250" alt="" />
 			</a>
 		</noscript>
 	</div>
-	<!-- END Hi-Media Media AdTag, vousair.com 1x1 - v1.0 -->
+	<!-- END Hi-Media Media AdTag, vousair.com 300x250 - v1.0 -->
 </div>
 <?php endif; ?>

@@ -19,7 +19,7 @@ function vs_theme_register_sidebars() {
 	$args = array(
 		'name'          => __( 'Barra Lateral Direita', 'vousair' ),
 		'id'            => 'vs-sidebar',
-		'description'   => 'Barra lateral direita.',
+		'description'   => 'Barra lateral deste Tema.',
 		'class'         => 'vs-sidebar',
 		'before_widget' => '<section>',
 		'after_widget'  => '</section>',
