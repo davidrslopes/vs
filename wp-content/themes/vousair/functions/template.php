@@ -6,15 +6,79 @@
  * @subpackage VouSair
  * @since VouSair Theme 1.0
  */
-//All our sections, settings, and controls will be added here
+
+
+
+/**
+ * TYPOGRAPHY
+ *
+ * @package WordPress
+ * @subpackage VouSair
+ * @since VouSair Theme 1.0
+ */
+
+/**
+ * Returns an array of system fonts
+ * Feel free to edit this, update the font fallbacks, etc.
+ */
+
+function options_typography_get_os_fonts() {
+	// OS Font Defaults
+	$os_faces = array(
+		'Arial, sans-serif' => 'Arial',
+		'"Avant Garde", sans-serif' => 'Avant Garde',
+		'Cambria, Georgia, serif' => 'Cambria',
+		'Copse, sans-serif' => 'Copse',
+		'Garamond, "Hoefler Text", Times New Roman, Times, serif' => 'Garamond',
+		'Georgia, serif' => 'Georgia',
+		'"Helvetica Neue", Helvetica, sans-serif' => 'Helvetica Neue',
+		'Tahoma, Geneva, sans-serif' => 'Tahoma'
+	);
+	return $os_faces;
+}
+
+/**
+ * Returns a select list of Google fonts
+ * Feel free to edit this, update the fallbacks, etc.
+ */
+
+function options_typography_get_google_fonts() {
+	// Google Fonts
+	$google_faces = array(
+		'Arvo, serif' => 'Arvo',
+		'Copse, sans-serif' => 'Copse',
+		'Droid Sans, sans-serif' => 'Droid Sans',
+		'Droid Serif, serif' => 'Droid Serif',
+		'Lobster, cursive' => 'Lobster',
+		'Nobile, sans-serif' => 'Nobile',
+		'Open Sans, sans-serif' => 'Open Sans',
+		'Oswald, sans-serif' => 'Oswald',
+		'Pacifico, cursive' => 'Pacifico',
+		'Rokkitt, serif' => 'Rokkit',
+		'Montserrat, sans-serif' => 'Montserrat',
+		'PT Sans, sans-serif' => 'PT Sans',
+		'Quattrocento, serif' => 'Quattrocento',
+		'Raleway, cursive' => 'Raleway',
+		'Ubuntu, sans-serif' => 'Ubuntu',
+		'Yanone Kaffeesatz, sans-serif' => 'Yanone Kaffeesatz'
+	);
+	return $google_faces;
+}
+
+/**
+ * WP CUSTOMIZER
+ *
+ * @package WordPress
+ * @subpackage VouSair
+ * @since VouSair Theme 1.0
+ */
+
 function vs_customize_register( $wp_customize ) {
 
-	/********************
-
-	SECTION : NAVEGAÇÃO
-
-	********************/
-
+	/**
+	 * Navegação
+	 *
+	 */
 	$wp_customize->add_section( 'vs_nav' , array(
 		'title'		=> __( 'Navegação', 'vousair' ),
 		'priority'	=> 30,
@@ -54,18 +118,17 @@ function vs_customize_register( $wp_customize ) {
 				'settings'		=> 'vs_navbar_theme',
 				'type'			=> 'select',
 				'choices'		=> array(
-					'dark'   => __( 'Escuro', 'vousair'),
-					'light'  => __( 'Claro', 'vousair')
+					'dark'	=> __( 'Escuro', 'vousair'),
+					'light'	=> __( 'Claro', 'vousair')
 				)
 			)
 		)
 	);
 
-	/********************
-
-	SECTION : PUBLICIDADE
-
-	********************/
+	/**
+	 * Publicidade
+	 *
+	 */
 
 	$wp_customize->add_section( 'vs_pub' , array(
 		'title'		=> __( 'Publicidade', 'vousair' ),
@@ -161,5 +224,110 @@ function vs_customize_register( $wp_customize ) {
 			)
 		)
 	);
+
+	//Detecção AdBlock
+	$wp_customize->add_setting( 'vs_fuck_ad_block' , array(
+		'default'	=> true,
+		'transport'	=> 'refresh',
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'vs_fuck_ad_block',
+			array(
+				'label'			=> __( 'Detecção AdBlock', 'vousair' ),
+				'section'		=> 'vs_pub',
+				'settings'		=> 'vs_fuck_ad_block',
+				'type'			=> 'checkbox'
+			)
+		)
+	);
+
+	/**
+	 * Tipografia
+	 *
+	 */
+
+	//$typography_mixed_fonts = array_merge( options_typography_get_os_fonts() , options_typography_get_google_fonts() );
+	//asort($typography_mixed_fonts);
+	$typography_google_fonts = options_typography_get_google_fonts();
+	asort($typography_google_fonts);
+
+	$wp_customize->add_section( 'vs_typography' , array(
+		'title'		=> __( 'Tipografia', 'vousair' ),
+		'priority'	=> 30,
+	) );
+
+	//Tipo de fonte Principal
+	$wp_customize->add_setting( 'vs_main_font_type' , array(
+		'default'	=> 'Montserrat',
+		'transport'	=> 'refresh',
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'vs_main_font_type',
+			array(
+				'label'			=> __( 'Tipo de fonte Principal', 'vousair' ),
+				'section'		=> 'vs_typography',
+				'settings'		=> 'vs_main_font_type',
+				'type'			=> 'select',
+				'choices'		=> $typography_google_fonts
+			)
+		)
+	);
+	//Tamanho de fonte Principal
+	$wp_customize->add_setting( 'vs_main_font_size' , array(
+		'default'	=> '1.0',
+		'transport'	=> 'refresh',
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'vs_main_font_size',
+			array(
+				'label'			=> __( 'Tamanho de fonte Principal (em rem)', 'vousair' ),
+				'section'		=> 'vs_typography',
+				'settings'		=> 'vs_main_font_size',
+				'type'			=> 'number'
+			)
+		)
+	);
+
+	//Espaçamento entre linhas
+	$wp_customize->add_setting( 'vs_main_line_height' , array(
+		'default'	=> '1.5',
+		'transport'	=> 'refresh',
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'vs_main_line_height',
+			array(
+				'label'			=> __( 'Espaçamento entre linhas', 'vousair' ),
+				'section'		=> 'vs_typography',
+				'settings'		=> 'vs_main_line_height',
+				'type'			=> 'number'
+			)
+		)
+	);
+
+	//Cor do texto principal
+	$wp_customize->add_setting( 'vs_main_text_color' , array(
+		'default'	=> '#333333',
+		'transport'	=> 'refresh',
+	) );
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'vs_main_text_color',
+			array(
+				'label'		=> __( 'Cor do texto principal', 'vousair' ),
+				'section'	=> 'vs_typography',
+				'settings'	=> 'vs_main_text_color',
+			)
+		)
+	);
+
 }
 add_action( 'customize_register', 'vs_customize_register' );

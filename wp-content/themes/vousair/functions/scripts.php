@@ -40,14 +40,15 @@ function vs_theme_enqueue_scripts() {
 		$version,
 		true
 	);
-
-	wp_enqueue_script(
-		'adblock-script',
-		VS_THEME_URI . '/assets/js/fuckadblock.min.js',
-		array(),
-		$version,
-		true
-	);
+	if( get_theme_mod('vs_fuck_ad_block', true) ):
+		wp_enqueue_script(
+			'adblock-script',
+			VS_THEME_URI . '/assets/js/fuckadblock.min.js',
+			array(),
+			$version,
+			true
+		);
+	endif;
 }
 
 /**
