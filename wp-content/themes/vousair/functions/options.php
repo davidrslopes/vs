@@ -7,6 +7,7 @@
  * @since VouSair Theme 1.0
  */
 
+add_theme_support( 'post-thumbnails' );
 
 function vs_customize_css(){
 ?>

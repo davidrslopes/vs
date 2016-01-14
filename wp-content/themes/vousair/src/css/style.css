@@ -4934,10 +4934,15 @@ body.admin-bar nav.vs-navigation {
 #7# SIDEBAR
 
 ********************/
+.vs-sidebar {
+  background-color: #EAEAEA; }
+
 /********************
 
 #99# UNSORTED CODE
 
 ********************/
+.vs-mrec-main {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

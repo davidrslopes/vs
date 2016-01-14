@@ -17,17 +17,26 @@
 get_header(); ?>
 
 <main class="container">
-	<section class="col-md-8 col-xl-9">
-		<?php
-		if ( have_posts() ) :
-			while ( have_posts() ) :
-				the_post();
-			endwhile;
-		else :
-			get_template_part( 'parts/all', 'noresults' );
-		endif; ?>
+	<section class="col-md-7 col-xl-8">
+		<div class="card-deck-wrapper">
+				<div class="card-group">
+				<?php
+				if ( have_posts() ) :
+					$i = 1;
+					while ( have_posts() ) :
+						the_post();
+						get_template_part( 'parts/list', 'post' );
+						if($i==2) echo'</div><div class="card-group">';
+						$i++;
+					endwhile;
+					wp_link_pages();
+				else :
+					get_template_part( 'parts/all', 'noresults' );
+				endif; ?>
+				</div>
+		</div>
 	</section>
-	<aside class="vs-sidebar col-md-4 col-xl-3">
+	<aside class="vs-sidebar col-md-5 col-xl-4">
 		<?php get_sidebar( 'vs-sidebar' ); ?>
 	</aside>
 </main>

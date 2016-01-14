@@ -9,10 +9,11 @@
 $vs_nav_bgcolor = get_theme_mod( 'vs_navbar_bgcolor', '#333333' );
 $vs_nav_theme = get_theme_mod( 'vs_navbar_theme', 'dark' );
 ?>
-<nav class="navbar navbar-full navbar-<?php echo $vs_nav_theme; ?>" style="background-color: <?php echo $vs_nav_bgcolor; ?>;">
+
+<nav class="navbar navbar-<?php echo $vs_nav_theme; ?>" style="background-color: <?php echo $vs_nav_bgcolor; ?>;">
 	<div class="container">
 		<a class="navbar-brand" href="<?php echo VS_ROOT; ?>">
-			<img alt="vousair" src="<?php echo VS_THEME_URI; ?>/assets/img/vousair_ipad.png" height="30" class="img-responsive">
+			<img alt="vousair" src="<?php echo VS_THEME_URI; ?>/assets/img/vousair_ipad.png" height="30">
 		</a>
 		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#vs-navbar">&#9776;</button>
 

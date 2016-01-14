@@ -7,7 +7,23 @@
  * @since VouSair Theme 1.0
  */
 
+/**
+ * EXCERPT MODIFICATION
+ *
+ * @package WordPress
+ * @subpackage VouSair
+ * @since VouSair Theme 1.0
+ */
 
+function vs_excerpt_length( $length ) {
+	return 40;
+}
+add_filter( 'excerpt_length', 'vs_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return  '<a href="' . get_the_permalink() . '">' . __( ' Ler mais...', 'vousair' ) . '</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
  * TYPOGRAPHY
