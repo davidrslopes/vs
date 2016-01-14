@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 					dest: "assets/fonts"
 				},
 				fontawesome_css: {
-					 options: {
+					options: {
 						srcPrefix: "bower_components/fontawesome/css",
 						destPrefix: "src/vendor/fontawesome/css"
 					},
@@ -49,11 +49,18 @@ module.exports = function(grunt) {
 					dest: "assets/fonts"
 				},
 				ionicons_css: {
-					 options: {
+					options: {
 						srcPrefix: "bower_components/ionicons/css",
 						destPrefix: "src/vendor/ionicons/css"
 					},
 					files: { "ionicons.css": "ionicons.css" }
+				},
+				fuckadblock: {
+					options: {
+						srcPrefix: "bower_components/fuckadblock",
+						destPrefix: "src/vendor/fuckadblock"
+					},
+					files: { "fuckadblock.js": "fuckadblock.js" }
 				}
 			}, // bowercopy
 
@@ -109,7 +116,8 @@ module.exports = function(grunt) {
 			uglify: {
 				jsfiles: {
 					files: {
-						'assets/js/app.min.js': ['build/js/app.js']
+						'assets/js/app.min.js': ['build/js/app.js'],
+						'assets/js/fuckadblock.min.js': ['src/vendor/fuckadblock/fuckadblock.js']
 					}
 				},
 			}, // uglify
