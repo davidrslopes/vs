@@ -45,4 +45,5 @@
 	<?php get_template_part( 'parts/adtag', '1x1' ); ?>
 	<?php get_template_part( 'parts/adtag', 'billboard' ); ?>
 	<?php get_template_part( 'parts/all', 'header' ); ?>
-	<?php get_template_part( 'parts/all', 'navigation' ); ?>
+	<?php //get_template_part( 'parts/all', 'navigation' ); ?>
+	<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
