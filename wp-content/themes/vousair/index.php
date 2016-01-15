@@ -26,7 +26,7 @@ get_header(); ?>
 					while ( have_posts() ) :
 						the_post();
 						get_template_part( 'parts/list', 'post' );
-						if($i==2) echo'</div><div class="card-group">';
+						if($i % 2 == 0) echo'</div><div class="card-group">';
 						$i++;
 					endwhile;
 					wp_link_pages();
