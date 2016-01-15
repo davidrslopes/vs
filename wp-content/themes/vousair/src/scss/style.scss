@@ -150,7 +150,7 @@ $enable-hover-media-query:	true;
 ********************/
 
 .vs-header{
-	background-color:white;
+	background-color:#080808;
 	padding-top:.5rem;
 	padding-bottom:.5rem;
 }
@@ -178,9 +178,10 @@ body.admin-bar nav.vs-navigation{
 ********************/
 
 .vs-billboard{
-	background-color: white;
+	background-color: #080808;
+	border-bottom:1px solid $vs-grey-dark;
 	text-align:center;
-	margin-bottom:-7px;
+	//margin-bottom:-7px;
 	>div{
 		margin-bottom:-7px; //fix spacing problem with hmtags
 	}
