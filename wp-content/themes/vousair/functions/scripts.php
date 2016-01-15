@@ -40,10 +40,10 @@ function vs_theme_enqueue_scripts() {
 		$version,
 		true
 	);
-	if( get_theme_mod('vs_fuck_ad_block', true) ):
+	if( get_theme_mod('vs_block_ad_block', true) ):
 		wp_enqueue_script(
 			'adblock-script',
-			VS_THEME_URI . '/assets/js/fuckadblock.min.js',
+			VS_THEME_URI . '/assets/js/blockadblock.min.js',
 			array(),
 			$version,
 			true

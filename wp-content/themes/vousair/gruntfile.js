@@ -55,12 +55,12 @@ module.exports = function(grunt) {
 					},
 					files: { "ionicons.css": "ionicons.css" }
 				},
-				fuckadblock: {
+				blockadblock: {
 					options: {
-						srcPrefix: "bower_components/fuckadblock",
-						destPrefix: "src/vendor/fuckadblock"
+						srcPrefix: "bower_components/blockadblock",
+						destPrefix: "src/vendor/blockadblock"
 					},
-					files: { "fuckadblock.js": "fuckadblock.js" }
+					files: { "blockadblock.js": "blockadblock.js" }
 				}
 			}, // bowercopy
 
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
 				jsfiles: {
 					files: {
 						'assets/js/app.min.js': ['build/js/app.js'],
-						'assets/js/fuckadblock.min.js': ['src/vendor/fuckadblock/fuckadblock.js']
+						'assets/js/blockadblock.min.js': ['src/vendor/blockadblock/blockadblock.js']
 					}
 				},
 			}, // uglify

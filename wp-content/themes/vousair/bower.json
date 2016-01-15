@@ -21,6 +21,6 @@
 		"bootstrap": "^4",
 		"fontawesome": "^4.5.0",
 		"ionicons": "^2.0.1",
-		"fuckadblock": "^3.2.0"
+		"blockadblock": "^3.2.0"
 	}
 }

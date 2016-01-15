@@ -45,7 +45,7 @@ function vs_google_font_api(){
 }
 add_action( 'wp_footer', 'vs_google_font_api');
 
-function vs_fuck_ad_block(){
+function vs_block_ad_block(){
 ?>
 <script type="text/javascript">
 	//AdBlock Detection
@@ -59,25 +59,25 @@ function vs_fuck_ad_block(){
 			console.info('AdBlock foi detectado.');
 		}
 
-		// Recommended audit because AdBlock lock the file 'fuckadblock.js'
-		// If the file is not called, the variable does not exist 'fuckAdBlock'
+		// Recommended audit because AdBlock lock the file 'blockadblock.js'
+		// If the file is not called, the variable does not exist 'blockAdBlock'
 		// This means that AdBlock is present
-		if(typeof fuckAdBlock === 'undefined') {
+		if(typeof blockAdBlock === 'undefined') {
 			adBlockDetected();
 		} else {
-			fuckAdBlock.onDetected(adBlockDetected);
-			fuckAdBlock.onNotDetected(adBlockNotDetected);
+			blockAdBlock.onDetected(adBlockDetected);
+			blockAdBlock.onNotDetected(adBlockNotDetected);
 			// and|or
-			fuckAdBlock.on(true, adBlockDetected);
-			fuckAdBlock.on(false, adBlockNotDetected);
+			blockAdBlock.on(true, adBlockDetected);
+			blockAdBlock.on(false, adBlockNotDetected);
 			// and|or
-			fuckAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
+			blockAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
 		}
 
 		// Change the options
-		fuckAdBlock.setOption('checkOnLoad', true);
+		blockAdBlock.setOption('checkOnLoad', true);
 		// and|or
-		fuckAdBlock.setOption({
+		blockAdBlock.setOption({
 			debug: false,
 			checkOnLoad: true,
 			resetOnEnd: true
@@ -87,6 +87,6 @@ function vs_fuck_ad_block(){
 </script>
 <?php
 }
-if( get_theme_mod('vs_fuck_ad_block', true) ):
-	add_action( 'wp_head', 'vs_fuck_ad_block');
+if( get_theme_mod('vs_block_ad_block', true) ):
+	add_action( 'wp_head', 'vs_block_ad_block');
 endif;

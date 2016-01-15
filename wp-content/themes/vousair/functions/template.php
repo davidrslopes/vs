@@ -242,18 +242,18 @@ function vs_customize_register( $wp_customize ) {
 	);
 
 	//Detecção AdBlock
-	$wp_customize->add_setting( 'vs_fuck_ad_block' , array(
+	$wp_customize->add_setting( 'vs_block_ad_block' , array(
 		'default'	=> true,
 		'transport'	=> 'refresh',
 	) );
 	$wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'vs_fuck_ad_block',
+			'vs_block_ad_block',
 			array(
 				'label'			=> __( 'Detecção AdBlock', 'vousair' ),
 				'section'		=> 'vs_pub',
-				'settings'		=> 'vs_fuck_ad_block',
+				'settings'		=> 'vs_block_ad_block',
 				'type'			=> 'checkbox'
 			)
 		)
