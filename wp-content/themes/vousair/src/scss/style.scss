@@ -187,14 +187,32 @@ body.admin-bar nav.vs-navigation{
 	}
 }
 
+aside.vs-sidebar > section.vs-mrec-main{
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	.vs-pub-notice{
+		text-align: right;
+	}
+}
 /********************
 
 #7# SIDEBAR
 
 ********************/
 
-.vs-sidebar{
-	background-color:$vs-grey-light;
+aside.vs-sidebar{
+	background-color:#080808;
+	section{
+		border-bottom: 1px solid $vs-grey-dark;
+		:last-child{
+			border-bottom: 0;
+		}
+		//wp search widget
+		form.searchform{
+
+		}
+	}
 }
 
 /********************
@@ -203,6 +221,3 @@ body.admin-bar nav.vs-navigation{
 
 ********************/
 
-.vs-mrec-main{
-	text-align:center;
-}

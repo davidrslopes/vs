@@ -4929,20 +4929,29 @@ body.admin-bar nav.vs-navigation {
   .vs-billboard > div {
     margin-bottom: -7px; }
 
+aside.vs-sidebar > section.vs-mrec-main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center; }
+  aside.vs-sidebar > section.vs-mrec-main .vs-pub-notice {
+    text-align: right; }
+
 /********************
 
 #7# SIDEBAR
 
 ********************/
-.vs-sidebar {
-  background-color: #EAEAEA; }
+aside.vs-sidebar {
+  background-color: #080808; }
+  aside.vs-sidebar section {
+    border-bottom: 1px solid #333333; }
+    aside.vs-sidebar section :last-child {
+      border-bottom: 0; }
 
 /********************
 
 #99# UNSORTED CODE
 
 ********************/
-.vs-mrec-main {
-  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

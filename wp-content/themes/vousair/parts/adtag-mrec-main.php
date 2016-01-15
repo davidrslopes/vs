@@ -9,7 +9,7 @@
 $vs_mrec_main = get_theme_mod('vs_mrec_main', true);
 if($vs_mrec_main):
 ?>
-<div class="vs-mrec-main">
+<section class="vs-mrec-main">
 	<!-- BEGIN Hi-Media Media AdTag, vousair.com 300x250 - v1.0 -->
 	<div class="hmads_300x250">
 
@@ -42,5 +42,6 @@ if($vs_mrec_main):
 		</noscript>
 	</div>
 	<!-- END Hi-Media Media AdTag, vousair.com 300x250 - v1.0 -->
-</div>
+	<div class="vs-pub-notice"><small>Pub</small></div>
+</section>
 <?php endif; ?>
