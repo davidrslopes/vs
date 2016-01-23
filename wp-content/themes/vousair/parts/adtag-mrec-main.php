@@ -42,6 +42,6 @@ if($vs_mrec_main):
 		</noscript>
 	</div>
 	<!-- END Hi-Media Media AdTag, vousair.com 300x250 - v1.0 -->
-	<div class="vs-pub-notice"><small>Pub</small></div>
+	<div class="vs-pub-notice"><small>Publicidade</small></div>
 </section>
 <?php endif; ?>

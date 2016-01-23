@@ -17,7 +17,7 @@
 get_header(); ?>
 
 <main class="container">
-	<section class="col-md-7 col-xl-8">
+	<section class="vs-content col-md-7 col-xl-8">
 		<div class="card-deck-wrapper">
 				<div class="card-group">
 				<?php

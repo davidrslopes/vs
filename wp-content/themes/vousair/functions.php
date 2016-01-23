@@ -33,15 +33,14 @@ require VS_THEME_DIR . '/functions/sidebars.php';
 // Theme options
 require VS_THEME_DIR . '/functions/options.php';
 
+// Widgets
+require VS_THEME_DIR . '/functions/widgets.php';
+
 // Admin tweaks
 // require VS_THEME_DIR . '/functions/admin.php';
 
 // Theme setup
 // require VS_THEME_DIR . '/functions/setup.php';
 
-// Widgets
-// require VS_THEME_DIR . '/functions/widgets.php';
-
 // Various utilitites
 // require VS_THEME_DIR . '/functions/utils.php';
-

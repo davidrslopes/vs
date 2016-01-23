@@ -4925,16 +4925,29 @@ body.admin-bar nav.vs-navigation {
 .vs-billboard {
   background-color: #080808;
   border-bottom: 1px solid #333333;
-  text-align: center; }
+  text-align: center;
+  padding: 5px 0; }
   .vs-billboard > div {
     margin-bottom: -7px; }
+
+.vs-leaderboard > div {
+  margin-bottom: -7px; }
 
 aside.vs-sidebar > section.vs-mrec-main {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center; }
+  aside.vs-sidebar > section.vs-mrec-main > div {
+    margin-bottom: -7px; }
   aside.vs-sidebar > section.vs-mrec-main .vs-pub-notice {
-    text-align: right; }
+    width: 300px;
+    text-align: right;
+    margin: 0 auto;
+    font-size: 12px;
+    font-style: italic;
+    background-color: #333333;
+    color: #666666;
+    padding-right: 15px; }
 
 /********************
 
@@ -4944,6 +4957,7 @@ aside.vs-sidebar > section.vs-mrec-main {
 aside.vs-sidebar {
   background-color: #080808; }
   aside.vs-sidebar section {
+    padding: 15px 0;
     border-bottom: 1px solid #333333; }
     aside.vs-sidebar section :last-child {
       border-bottom: 0; }

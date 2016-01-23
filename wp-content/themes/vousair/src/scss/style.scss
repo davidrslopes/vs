@@ -181,7 +181,13 @@ body.admin-bar nav.vs-navigation{
 	background-color: #080808;
 	border-bottom:1px solid $vs-grey-dark;
 	text-align:center;
-	//margin-bottom:-7px;
+	padding:5px 0;
+	>div{
+		margin-bottom:-7px; //fix spacing problem with hmtags
+	}
+}
+
+.vs-leaderboard{
 	>div{
 		margin-bottom:-7px; //fix spacing problem with hmtags
 	}
@@ -191,8 +197,18 @@ aside.vs-sidebar > section.vs-mrec-main{
 	padding-top:15px;
 	padding-bottom:15px;
 	text-align:center;
+	>div{
+		margin-bottom:-7px;
+	}
 	.vs-pub-notice{
+		width: 300px;
 		text-align: right;
+		margin: 0 auto;
+		font-size: 12px;
+		font-style: italic;
+		background-color:$vs-grey-dark;
+		color:$vs-grey;
+		padding-right:15px;
 	}
 }
 /********************
@@ -204,13 +220,14 @@ aside.vs-sidebar > section.vs-mrec-main{
 aside.vs-sidebar{
 	background-color:#080808;
 	section{
+		padding: 15px 0;
 		border-bottom: 1px solid $vs-grey-dark;
 		:last-child{
 			border-bottom: 0;
 		}
 		//wp search widget
 		form.searchform{
-
+			
 		}
 	}
 }
