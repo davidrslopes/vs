@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-07 08:54:57+0000\n"
+"PO-Revision-Date: 2016-01-20 15:27:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -317,7 +317,7 @@ msgstr "Os ficheiros no directório %s são executados automaticamente."
 msgid "You are not allowed to manage these items."
 msgstr "Não tem permissões para gerir estes itens."
 
-#: wp-admin/widgets.php:431
+#: wp-admin/widgets.php:436
 msgid "This will clear all items from the inactive widgets list. You will not be able to restore any customizations."
 msgstr "Isto irá limpar todos os itens da lista de widgets inativos. Não poderá restaurar quaisquer personalizações. "
 
@@ -333,7 +333,7 @@ msgstr "Lista de utilizadores"
 msgid "One of the selected users is not a member of this site."
 msgstr "Um dos utilizadores seleccionados não é membro deste site."
 
-#: wp-admin/widgets.php:423
+#: wp-admin/widgets.php:426
 msgid "Clear Inactive Widgets"
 msgstr "Limpar widgets inactivos"
 
@@ -906,7 +906,7 @@ msgstr "Artigo agendado para: %s."
 
 #: wp-admin/edit-form-advanced.php:147
 msgid "Post draft updated."
-msgstr "Rascunho do artig actualizado."
+msgstr "Rascunho do artigo actualizado."
 
 #: wp-admin/edit-form-advanced.php:143
 msgid "Post published."
@@ -2743,7 +2743,7 @@ msgstr "Os seguintes idiomas não puderam ser actualizados:"
 msgid "Unable to submit this form, please refresh and try again."
 msgstr "Impossível enviar este formulário, por favor volte a carregar a página e tente novamente."
 
-#: wp-admin/widgets.php:498
+#: wp-admin/widgets.php:504
 msgid "Add Widget"
 msgstr "Adicionar widget"
 
@@ -10672,11 +10672,6 @@ msgstr[1] "%s comentários restaurados de spam"
 msgid "Empty Trash"
 msgstr "Esvaziar o Lixo"
 
-#. translators: %s: date and time of the revision
-#: wp-admin/edit-form-advanced.php:142
-msgid "Post restored to revision from %s."
-msgstr "Artigo restaurado da versão %s"
-
 #: wp-admin/custom-background.php:255 wp-admin/custom-background.php:259
 #: wp-admin/includes/image-edit.php:68
 msgid "Restore Original Image"
@@ -10843,6 +10838,11 @@ msgstr "As chaves públicas e privadas estão incorrectas para %s"
 #: wp-admin/includes/edit-tag-messages.php:19
 msgid "Items deleted."
 msgstr "Itens eliminados."
+
+#. translators: %s: date and time of the revision
+#: wp-admin/edit-form-advanced.php:142
+msgid "Post restored to revision from %s."
+msgstr "Artigo restaurado para a revisão %s"
 
 #. translators: %s: date and time
 #: wp-admin/includes/misc.php:866

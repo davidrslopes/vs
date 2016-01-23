@@ -660,7 +660,7 @@ msgstr "Artigo incorporado de WordPress"
 msgid "When in reorder mode, additional controls to reorder widgets will be available in the widgets list above."
 msgstr "No modo de reordenação, estarão disponíveis controlos adicionais estarão disponíveis para reordenar os widgets na lista acima."
 
-#: wp-includes/comment-template.php:2143
+#: wp-includes/comment-template.php:2171
 msgid "<a href=\"%1$s\" aria-label=\"Logged in as %2$s. Edit your profile.\">Logged in as %2$s</a>. <a href=\"%3$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"Logged in as %2$s. Edit your profile.\">Sessão iniciada como %2$s</a>. <a href=\"%3$s\">Terminar sessão?</a>"
 
@@ -863,15 +863,15 @@ msgstr "Esconder imagem"
 msgid "Expand Sidebar"
 msgstr "Expandir a barra lateral"
 
-#: wp-includes/class-wp-customize-manager.php:1828
+#: wp-includes/class-wp-customize-manager.php:1830
 msgid "Site Icon"
 msgstr "Ícone do site"
 
-#: wp-includes/class-wp-customize-manager.php:1829
+#: wp-includes/class-wp-customize-manager.php:1831
 msgid "The Site Icon is used as a browser and app icon for your site. Icons must be square, and at least 512px wide and tall."
 msgstr "O ícone do site é usado como ícone de navegador e de app para o teu site. Os ícones tem de ser quadrados e com o mínimo de 512 px de largura e de altura."
 
-#: wp-includes/class-wp-customize-manager.php:1795
+#: wp-includes/class-wp-customize-manager.php:1797
 msgid "Site Identity"
 msgstr "Identidade do site"
 
@@ -1680,24 +1680,24 @@ msgid "The %1$s option is deprecated for the family of %2$s functions. Use the %
 msgstr "A opção %1$s está obsoleta para a família de funções %2$s. Em vez dessa, use a função %3$s."
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1468
+#: wp-includes/comment-template.php:1480
 msgid "1 Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "1 comentário<span class=\"screen-reader-text\"> em %s</span>"
 
 #. translators: 1: Number of comments 2: post title
-#: wp-includes/comment-template.php:1473
+#: wp-includes/comment-template.php:1485
 msgid "%1$s Comment<span class=\"screen-reader-text\"> on %2$s</span>"
 msgid_plural "%1$s Comments<span class=\"screen-reader-text\"> on %2$s</span>"
 msgstr[0] "%1$s Comentário<span class=\"screen-reader-text\"> em %2$s</span>"
 msgstr[1] "%1$s Comentários<span class=\"screen-reader-text\"> em %2$s</span>"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1479
+#: wp-includes/comment-template.php:1491
 msgid "Comments Off<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Comentários fechados<span class=\"screen-reader-text\"> em %s</span>"
 
 #. translators: %s: post title
-#: wp-includes/comment-template.php:1463
+#: wp-includes/comment-template.php:1475
 msgid "No Comments<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Sem comentários<span class=\"screen-reader-text\"> em %s</span>"
 
@@ -1897,7 +1897,7 @@ msgstr "Mês: %s"
 msgid "Day: %s"
 msgstr "Dia: %s"
 
-#: wp-includes/comment-template.php:1570
+#: wp-includes/comment-template.php:1582
 msgid "Reply to %s"
 msgstr "Responder a %s"
 
@@ -3969,11 +3969,11 @@ msgstr "HTML"
 msgid "Hex Value"
 msgstr "Valor hexadecimal"
 
-#: wp-includes/class-wp-customize-manager.php:1862
+#: wp-includes/class-wp-customize-manager.php:1864
 msgid "Header Text Color"
 msgstr "Cor do texto do cabeçalho"
 
-#: wp-includes/class-wp-customize-manager.php:1839
+#: wp-includes/class-wp-customize-manager.php:1841
 msgid "Colors"
 msgstr "Cores"
 
@@ -4008,7 +4008,7 @@ msgstr "Argumentos insuficientes na chamada a este serviço de publicação remo
 msgid "Sorry, you cannot stick a private post."
 msgstr "Não pode fixar um artigo privado."
 
-#: wp-includes/class-wp-customize-manager.php:1885
+#: wp-includes/class-wp-customize-manager.php:1887
 #: wp-includes/customize/class-wp-customize-header-image-control.php:31
 msgid "Header Image"
 msgstr "Imagem do cabeçalho"
@@ -4049,32 +4049,32 @@ msgstr "Indique um nome de utilizador."
 msgid "Please enter a site title."
 msgstr "Indique o título do site."
 
-#: wp-includes/class-wp-customize-manager.php:2002
+#: wp-includes/class-wp-customize-manager.php:2004
 msgid "A static page"
 msgstr "Uma página estática"
 
-#: wp-includes/class-wp-customize-manager.php:1855
+#: wp-includes/class-wp-customize-manager.php:1857
 msgid "Display Header Text"
 msgstr "Mostrar texto no cabeçalho"
 
-#: wp-includes/class-wp-customize-manager.php:1877
+#: wp-includes/class-wp-customize-manager.php:1879
 msgid "Background Color"
 msgstr "Cor de fundo"
 
-#: wp-includes/class-wp-customize-manager.php:1905
+#: wp-includes/class-wp-customize-manager.php:1907
 #: wp-includes/customize/class-wp-customize-background-image-control.php:30
 msgid "Background Image"
 msgstr "Imagem de fundo"
 
-#: wp-includes/class-wp-customize-manager.php:1927
+#: wp-includes/class-wp-customize-manager.php:1929
 msgid "Background Repeat"
 msgstr "Repetir fundo"
 
-#: wp-includes/class-wp-customize-manager.php:1944
+#: wp-includes/class-wp-customize-manager.php:1946
 msgid "Background Position"
 msgstr "Posição do fundo"
 
-#: wp-includes/class-wp-customize-manager.php:1960
+#: wp-includes/class-wp-customize-manager.php:1962
 msgid "Background Attachment"
 msgstr "Comportamento do fundo"
 
@@ -4090,35 +4090,35 @@ msgstr "Remover imagem"
 msgid "Sorry, you are not allowed to edit this post type."
 msgstr "Não tem permissões para editar este tipo de artigo."
 
-#: wp-includes/class-wp-customize-manager.php:1964
+#: wp-includes/class-wp-customize-manager.php:1966
 msgid "Scroll"
 msgstr "Fluido"
 
-#: wp-includes/class-wp-customize-manager.php:1965
+#: wp-includes/class-wp-customize-manager.php:1967
 msgid "Fixed"
 msgstr "Fixo"
 
-#: wp-includes/class-wp-customize-manager.php:1931
+#: wp-includes/class-wp-customize-manager.php:1933
 msgid "No Repeat"
 msgstr "Não repetir"
 
-#: wp-includes/class-wp-customize-manager.php:1932
+#: wp-includes/class-wp-customize-manager.php:1934
 msgid "Tile"
 msgstr "Repetir"
 
-#: wp-includes/class-wp-customize-manager.php:1933
+#: wp-includes/class-wp-customize-manager.php:1935
 msgid "Tile Horizontally"
 msgstr "Repetir na horizontal"
 
-#: wp-includes/class-wp-customize-manager.php:1934
+#: wp-includes/class-wp-customize-manager.php:1936
 msgid "Tile Vertically"
 msgstr "Repetir na vertical"
 
-#: wp-includes/class-wp-customize-manager.php:2025
+#: wp-includes/class-wp-customize-manager.php:2027
 msgid "Posts page"
 msgstr "Página de artigos"
 
-#: wp-includes/class-wp-customize-manager.php:2013
+#: wp-includes/class-wp-customize-manager.php:2015
 msgid "Front page"
 msgstr "Página inicial"
 
@@ -4232,11 +4232,11 @@ msgstr "ERRO: O directório de temas está vazia ou não existe. Por favor verif
 msgid "Collapse Sidebar"
 msgstr "Esconder barra lateral"
 
-#: wp-includes/class-wp-customize-manager.php:1986
+#: wp-includes/class-wp-customize-manager.php:1988
 msgid "Your theme supports a static front page."
 msgstr "O seu tema suporta uma página inicial estática."
 
-#: wp-includes/class-wp-customize-manager.php:1997
+#: wp-includes/class-wp-customize-manager.php:1999
 msgid "Front page displays"
 msgstr "A página inicial mostra"
 
@@ -4246,15 +4246,15 @@ msgstr "A página inicial mostra"
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Seleccione &mdash;"
 
-#: wp-includes/class-wp-customize-manager.php:2001
+#: wp-includes/class-wp-customize-manager.php:2003
 msgid "Your latest posts"
 msgstr "Os seus artigos mais recentes"
 
-#: wp-includes/class-wp-customize-manager.php:1817
+#: wp-includes/class-wp-customize-manager.php:1819
 msgid "Tagline"
 msgstr "Descrição"
 
-#: wp-includes/class-wp-customize-manager.php:1983
+#: wp-includes/class-wp-customize-manager.php:1985
 msgid "Static Front Page"
 msgstr "Página inicial"
 
@@ -4924,7 +4924,7 @@ msgstr "Artigo inválido"
 msgid "Invalid taxonomy: %s."
 msgstr "Taxonomia inválida: %s"
 
-#: wp-includes/query.php:2549
+#: wp-includes/query.php:2552
 msgid "\"caller_get_posts\" is deprecated. Use \"ignore_sticky_posts\" instead."
 msgstr "\"caller_get_posts\" está obsoleto. Use \"ignore_sticky_posts\" em substituição."
 
@@ -5184,7 +5184,7 @@ msgstr "<strong>Valores em conflicto para as constantes VHOST e SUBDOMAIN_INSTAL
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>ERRO</strong>: Este nome de utilizador é inválido porque usa caracteres ilegais. Por favor, escolha um nome de utilizador válido."
 
-#: wp-includes/comment-template.php:2127
+#: wp-includes/comment-template.php:2155
 msgid "Required fields are marked %s"
 msgstr "Campos obrigatórios marcados com %s"
 
@@ -5351,7 +5351,7 @@ msgstr "Ocorreu um erro ao adiciona-lo a este site. Voltar à <a href=\"%s\">pá
 msgid "This file is too big. Files must be less than %d KB in size."
 msgstr "O ficheiro é demasiado grande. Os ficheiros devem ter menos que %d KB de tamanho."
 
-#: wp-includes/comment-template.php:2144
+#: wp-includes/comment-template.php:2172
 msgid "Your email address will not be published."
 msgstr "O seu endereço de email não será publicado."
 
@@ -6925,7 +6925,7 @@ msgstr "Registo de Novo Utilizador: %s"
 msgid "Cannot create a user with an empty login name."
 msgstr "Impossível criar um utilizador com login vazio."
 
-#: wp-includes/comment-template.php:2157
+#: wp-includes/comment-template.php:2185
 msgid "Cancel reply"
 msgstr "Cancelar resposta"
 
@@ -7188,7 +7188,7 @@ msgstr "Feed de comentários de %1$s %2$s %3$s"
 msgid "%1$s %2$s %3$s Category Feed"
 msgstr "Feed de categorias %1$s %2$s %3$s"
 
-#: wp-includes/comment-template.php:2158
+#: wp-includes/comment-template.php:2186
 msgid "Post Comment"
 msgstr "Publicar comentário"
 
@@ -7347,7 +7347,7 @@ msgstr "Temas"
 msgid "Default"
 msgstr "Predefinição"
 
-#: wp-includes/comment-template.php:2123
+#: wp-includes/comment-template.php:2151
 #: wp-includes/theme-compat/comments.php:102
 msgid "Website"
 msgstr "Website"
@@ -7433,7 +7433,7 @@ msgstr "O seu comentário aguarda moderação."
 msgid "%1$s at %2$s"
 msgstr "%1$s às %2$s"
 
-#: wp-includes/comment-template.php:2141
+#: wp-includes/comment-template.php:2169
 #: wp-includes/theme-compat/comments.php:82
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Tem de ter a <a href=\"%s\">sessão iniciada</a> para publicar um comentário."
@@ -7453,7 +7453,7 @@ msgstr "Páginas:"
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr "Criado com WordPress, plataforma de publicação pessoal sem&acirc;ntica de vanguarda."
 
-#: wp-includes/comment-template.php:1839 wp-includes/comment-template.php:2152
+#: wp-includes/comment-template.php:1851 wp-includes/comment-template.php:2180
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply to %s"
 msgstr "Responder a %s"
@@ -7506,7 +7506,7 @@ msgid_plural "%s topics"
 msgstr[0] "%s tópico"
 msgstr[1] "%s tópicos"
 
-#: wp-includes/comment-template.php:1751
+#: wp-includes/comment-template.php:1763
 msgid "Click here to cancel reply."
 msgstr "Clique aqui para cancelar a resposta."
 
@@ -7582,7 +7582,7 @@ msgstr "Artigos de %s"
 msgid "Feed for all posts filed under %s"
 msgstr "Feed de todos os artigos arquivados em %s"
 
-#: wp-includes/comment-template.php:1838 wp-includes/comment-template.php:2151
+#: wp-includes/comment-template.php:1850 wp-includes/comment-template.php:2179
 #: wp-includes/theme-compat/comments.php:75
 msgid "Leave a Reply"
 msgstr "Deixar uma resposta"
@@ -7591,7 +7591,7 @@ msgstr "Deixar uma resposta"
 msgid "My Sites"
 msgstr "Os meus sites"
 
-#: wp-includes/class-wp-customize-manager.php:1806
+#: wp-includes/class-wp-customize-manager.php:1808
 #: wp-includes/class-wp-xmlrpc-server.php:467
 msgid "Site Title"
 msgstr "Título do site"
@@ -7612,7 +7612,7 @@ msgstr "Iniciar sessão"
 msgid "&laquo; Previous Page"
 msgstr "&laquo; Página anterior"
 
-#: wp-includes/comment-template.php:2121
+#: wp-includes/comment-template.php:2149
 #: wp-includes/theme-compat/comments-popup.php:81 wp-login.php:720
 msgid "Email"
 msgstr "Email"
@@ -7645,7 +7645,7 @@ msgstr "Não tem permissões para editar este artigo."
 msgid "Sorry, you do not have the right to delete this post."
 msgstr "Não tem permissões para eliminar este artigo."
 
-#: wp-includes/comment-template.php:1488
+#: wp-includes/comment-template.php:1500
 msgid "Enter your password to view comments."
 msgstr "Introduza a sua senha para ver os comentários."
 
@@ -7667,15 +7667,15 @@ msgstr "Página seguinte &raquo;"
 msgid "Edit This"
 msgstr "Editar isto"
 
-#: wp-includes/comment-template.php:1571
+#: wp-includes/comment-template.php:1583
 msgid "Log in to Reply"
 msgstr "Inicie a sessão para responder"
 
-#: wp-includes/comment-template.php:1682
+#: wp-includes/comment-template.php:1694
 msgid "Leave a Comment"
 msgstr "Deixe um comentário"
 
-#: wp-includes/comment-template.php:1683
+#: wp-includes/comment-template.php:1695
 msgid "Log in to leave a Comment"
 msgstr "Inicie a sessão para deixar um comentário"
 
@@ -7734,7 +7734,7 @@ msgstr "Nenhum"
 msgid "Description"
 msgstr "Descrição"
 
-#: wp-includes/comment-template.php:1569 wp-includes/script-loader.php:488
+#: wp-includes/comment-template.php:1581 wp-includes/script-loader.php:488
 msgid "Reply"
 msgstr "Responder"
 
@@ -7742,7 +7742,7 @@ msgstr "Responder"
 msgid "Anonymous"
 msgstr "Anónimo"
 
-#: wp-includes/comment-template.php:2119
+#: wp-includes/comment-template.php:2147
 #: wp-includes/theme-compat/comments-popup.php:76
 #: wp-includes/theme-compat/comments.php:96
 msgid "Name"
@@ -7825,7 +7825,7 @@ msgstr "Autor"
 msgid "URL"
 msgstr "URL"
 
-#: wp-includes/comment-template.php:1041 wp-includes/comment-template.php:2139
+#: wp-includes/comment-template.php:1041 wp-includes/comment-template.php:2167
 msgctxt "noun"
 msgid "Comment"
 msgstr "Comentário"
@@ -7887,7 +7887,7 @@ msgstr "Páginas"
 msgid "Invalid file type"
 msgstr "Tipo de ficheiro inválido"
 
-#: wp-includes/class-wp-customize-manager.php:1949
+#: wp-includes/class-wp-customize-manager.php:1951
 #: wp-includes/class-wp-editor.php:989 wp-includes/media-template.php:616
 #: wp-includes/media-template.php:847 wp-includes/media-template.php:913
 msgid "Center"
@@ -7925,13 +7925,13 @@ msgstr "O ficheiro &#8220;%s&#8221; não é uma imagem."
 msgid "Saved."
 msgstr "Guardado."
 
-#: wp-includes/class-wp-customize-manager.php:1948
+#: wp-includes/class-wp-customize-manager.php:1950
 #: wp-includes/class-wp-editor.php:988 wp-includes/media-template.php:613
 #: wp-includes/media-template.php:844 wp-includes/media-template.php:910
 msgid "Left"
 msgstr "Esquerda"
 
-#: wp-includes/class-wp-customize-manager.php:1950
+#: wp-includes/class-wp-customize-manager.php:1952
 #: wp-includes/class-wp-editor.php:990 wp-includes/media-template.php:619
 #: wp-includes/media-template.php:850 wp-includes/media-template.php:916
 msgid "Right"
